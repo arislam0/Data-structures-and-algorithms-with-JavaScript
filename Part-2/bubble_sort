@@ -1,0 +1,18 @@
+// let arr = [30,70,10,0];
+// let arr = [5,7,12,9,6,3,10];
+let arr = [10,5,12,7,8,3,100,60,10,8,7];
+
+function bubbleSort(arr){
+    for (let i=0; i<arr.length; i++){
+        for(let j=i; j<arr.length; j++){
+            if(arr[i] > arr[j]){
+                let tem = arr[i];
+                arr[i] = arr[j];
+                arr[j] = tem;
+            }
+        }
+    }
+    return arr;
+}
+
+console.log(bubbleSort(arr));

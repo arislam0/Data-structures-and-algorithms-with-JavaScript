@@ -1,0 +1,1 @@
+console.log('It\' coming from app.js');

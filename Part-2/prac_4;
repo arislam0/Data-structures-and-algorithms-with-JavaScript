@@ -1,0 +1,22 @@
+function td_125(s){
+
+    let newStr = s.toLowerCase().replace(/[^0-9a-z]/g, "");
+    let left = 0, right = newStr.length-1;
+
+    console.log(newStr)
+
+    while(left < right){
+        if(newStr[left] !== newStr[right]) return false
+        left++;
+        right--;
+    }
+    return true;
+    
+}
+
+console.log(td_125("A man, a plan, a canal: Panama"));
+console.log(td_125("race a car"));
+console.log(td_125(" "));
+console.log(td_125("ab@a"));
+console.log(td_125("ab_a"));
+console.log(td_125("Marge, let's \"[went].\" I await {news} telegram."));
