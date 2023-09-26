@@ -41,13 +41,11 @@ class LinkedList {
 
        while(c){
             c.next = p;
-            k++;
             p=c;
             console.log("p: "+p.value);
             c=n;
             if(n){
                 n=n.next;
-                l++;
             }
        }
        this.print(p);
@@ -64,7 +62,7 @@ class LinkedList {
     return reverseHead;
   }
   reverse_main(head){
-    let rev = this.reverse_ll2(head);
+    let rev = this.reverse_ll(head);
 
     while(rev){
         console.log(rev.value);
